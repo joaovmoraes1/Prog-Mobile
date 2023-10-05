@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+ function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <View style={estilo.pagina} >
+      <Text>Olá Mundo</Text>
+     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+// criando a constante estilo
+// que vai receber um  objeto StyleSheet
+// objeto pagina - contém todos os estilos usados 
+const estilo = StyleSheet.create({
+   pagina: {
+    width: 200,
+    height: 200,
+    backgroundColor:'#FF0000'
+   }  
 });
+
+
+
+export default App;
